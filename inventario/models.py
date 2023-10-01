@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 
-class Catgoria(models.Model):
+class Categoria(models.Model):
     nombre = models.CharField(max_length=100, unique=True)
-    
+
     def __str__(self):
         return self.nombre
     
@@ -14,7 +14,7 @@ class ProductUnits(models.TextChoices):
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=100, unique=True)
-    categoria = models.ForeignKey(Catgoria, on_delete=models.CASCADE)
+    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
     descripcion = models.TextField
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     unidades = models.CharField(max_length=3, choices=ProductUnits.choices, default=ProductUnits.UNITS)
