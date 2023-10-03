@@ -1,6 +1,6 @@
 API REST CON DJANGO
 
-REPAP es una aplicacion de una tienda o distribuidor de auto partes
+Es una aplicacion de inventario para una tienda o distribuidor de auto partes
 
 Se tienen 4 tablas: Categoria, Producto, Orden, OrdenProducto
 
