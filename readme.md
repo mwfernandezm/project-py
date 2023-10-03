@@ -9,8 +9,10 @@ Orden,
 OrdenProducto
 
 Una Categoria puede tener varios Productos
+
 Un Producto puede tener varios OrdenesProductos
-Una Orden puede tener varias OrdenesProdcuts.
+
+Una Orden puede tener varias OrdenesProductos
 
 Como ejemplo de Categoria se tendran los siguientes registros: autos, motos, camiones y tractores.
 
